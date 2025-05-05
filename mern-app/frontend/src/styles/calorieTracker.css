@@ -1,0 +1,149 @@
+.calorie-tracker-page {
+    max-width: 700px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+/* Add this to bottom of calorieTracker.css */
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  /* ✅ Popup toast message */
+.toast {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #28a745;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    animation: fadeInOut 3s ease forwards;
+  }
+  
+  .toast.error {
+    background-color: #dc3545;
+  }
+  
+  @keyframes fadeInOut {
+    0%   { opacity: 0; transform: translate(-50%, -20px); }
+    10%  { opacity: 1; transform: translate(-50%, 0); }
+    90%  { opacity: 1; transform: translate(-50%, 0); }
+    100% { opacity: 0; transform: translate(-50%, -20px); }
+  }
+  
+
+
+  .calorie-tracker-page h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+  }
+  
+  .calorie-tracker-page label {
+    display: block;
+    margin-top: 20px;
+    font-weight: 600;
+    color: #444;
+  }
+  
+  .calorie-tracker-page input[type="date"],
+  .calorie-tracker-page select {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border 0.2s ease;
+  }
+  
+  .calorie-tracker-page input:focus,
+  .calorie-tracker-page select:focus {
+    outline: none;
+    border-color: #0d6efd;
+  }
+  
+  .food-entry {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+  }
+  
+  .food-entry input[type="text"],
+  .food-entry input[type="number"] {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  
+  .suggestions-list {
+    background-color: white;
+    border: 1px solid #cfd4da;
+    border-radius: 4px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    list-style-type: none;
+    padding: 0;
+    max-height: 100px;
+    overflow-y: auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .suggestions-list li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .suggestions-list li:hover {
+    background-color: #f0f4f7;
+  }
+  
+  
+  .calorie-tracker-page button {
+    margin-top: 20px;
+    padding: 12px 18px;
+    font-size: 15px;
+    background-color: #0d6efd;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .calorie-tracker-page button:hover {
+    background-color: #084cdf;
+  }
+  
+  .results {
+    margin-top: 30px;
+    text-align: center;
+    background: #eaf4ff;
+    padding: 20px;
+    border-radius: 10px;
+    color: #084cdf;
+  }
+  
+  .results h3 {
+    margin-bottom: 10px;
+  }
+  
