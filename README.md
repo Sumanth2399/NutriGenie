@@ -52,8 +52,6 @@ Personalized suggestions generated → Displayed via graphs/UI
 In the project directory:
 
 bash
-Copy
-Edit
 npm start           # Run frontend
 npm run dev         # Run backend (if setup in package.json)
 npm test            # Run tests
