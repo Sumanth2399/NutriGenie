@@ -18,14 +18,15 @@ NutriGenie is a full-stack MERN (MongoDB, Express.js, React.js, Node.js) web app
 Most fitness apps operate in isolation—either tracking steps or logging meals. NutriGenie addresses this gap by combining these elements and delivering personalized, real-time suggestions to promote better health.
 
 📂 Tech Stack
+| Layer       | Tools Used |
+|-------------|------------|
+| Frontend    | React.js, Tailwind CSS, Recharts |
+| Backend     | Node.js, Express.js |
+| Database    | MongoDB |
+| Auth        | JWT |
+| ML Models   | Python, scikit-learn, XGBoost |
+| Deployment  | Vercel (frontend), Railway/Render/Heroku (backend), MongoDB Atlas |
 
-Layer	Tools Used
-Frontend	React.js, Tailwind CSS, Recharts
-Backend	Node.js, Express.js
-Database	MongoDB
-Auth	JWT
-ML Models	Python, scikit-learn, XGBoost
-Deployment	Vercel (frontend), Railway/Render/Heroku (backend), MongoDB Atlas
 📐 Architecture Overview
 Frontend collects user input and displays analytics.
 
